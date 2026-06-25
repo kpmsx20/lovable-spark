@@ -6,6 +6,16 @@ Lovable Spark is a Chrome Manifest V3 extension built for Lovable project develo
 
 > This is an independent community project. It is not affiliated with, endorsed by, or sponsored by Lovable.
 
+## SEO Keywords
+
+Lovable Spark is a lovable extension for users searching for a lovable unlimited credits extension, lovable credits extension, lovable unlimited credits workflow, and lovable unlimited prompts support.
+
+- lovable unlimited credits extension
+- lovable unlimited credits
+- lovable extension
+- lovable credits extension
+- lovable unlimited prompts
+
 ## Quick Setup
 
 If you have installed unpacked Chrome extensions before:
