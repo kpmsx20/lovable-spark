@@ -1,0 +1,87 @@
+{
+  "manifest_version": 3,
+  "name": "Lovable Spark",
+  "version": "3.0",
+  "description": "Spark edition browser extension for faster Lovable prompt workflows.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "sidePanel",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://*.lovable.dev/*",
+    "https://api.lovable.dev/*",
+    "https://lovable.dev/*",
+    "https://lovable-api.com/*",
+    "https://io.eklas.dev/*"
+  ],
+  "action": {
+    "default_title": "Lovable Spark",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.lovable.dev/*", "https://lovable.dev/*"],
+      "js": ["pageHook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://*.lovable.dev/*",
+        "https://lovable.dev/*",
+        "https://api.lovable.dev/*"
+      ],
+      "js": [
+        "jszip.min.js",
+        "hwFingerprint.js",
+        "admin-backend.js",
+        "sounds.js",
+        "i18n.js",
+        "content-templates.js",
+        "content.js"
+      ],
+      "css": ["floating.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "sounds/error-payment.mp3",
+        "sounds/error-ratelimit.mp3",
+        "sounds/error-token.mp3",
+        "assets/logo-master-lovable.png",
+        "assets/logo-master-lovable-square.png",
+        "assets/icon16.png",
+        "assets/icon32.png",
+        "assets/icon48.png",
+        "assets/icon128.png"
+      ],
+      "matches": ["https://*.lovable.dev/*", "https://lovable.dev/*"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; connect-src https://io.eklas.dev https://*.lovable.dev https://api.lovable.dev https://lovable-api.com; img-src 'self' blob: data: https:; style-src 'self' 'unsafe-inline'; media-src 'self'"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}
