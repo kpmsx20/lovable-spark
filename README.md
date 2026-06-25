@@ -1,8 +1,8 @@
 # Lovable Spark
 
-Open-source Spark edition browser extension for faster Lovable prompt workflows.
+Open-source Spark edition browser extension for faster Lovable prompt workflows, unlimited prompt support, and credit-aware project building.
 
-Lovable Spark is a Chrome Manifest V3 extension built for Lovable project development. It adds a native side panel, prompt workflow helpers, project utilities, file attachment support, and Spark-edition UI enhancements.
+Lovable Spark is a Chrome Manifest V3 extension built for Lovable project development. It adds a native side panel, prompt workflow helpers, unlimited prompt workflow support, frozen credit mode, project utilities, file attachment support, and Spark-edition UI enhancements.
 
 > This is an independent community project. It is not affiliated with, endorsed by, or sponsored by Lovable.
 
@@ -66,6 +66,8 @@ Standard Chrome on Android does not support unpacked Chrome extensions. Use Kiwi
 
 - Chrome Manifest V3 extension.
 - Native side panel for Lovable workflows.
+- Unlimited prompt workflow support.
+- Frozen credit / credit-aware prompt mode.
 - Prompt sending and prompt workflow helpers.
 - Prompt optimization support.
 - File attachment support.
