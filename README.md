@@ -35,6 +35,12 @@ The extension uses a license key flow for activation.
 
 Trial keys are temporary and expire after about 30 minutes.
 
+## Community And Support
+
+- Telegram channel: [@eklasstore](https://t.me/eklasstore)
+- Telegram bot: [@eklasstorebot](https://t.me/eklasstorebot)
+- WhatsApp group: [Join the Lovable Spark community](https://chat.whatsapp.com/FI9afntT96J9ZXhhKccCmY?mode=gi_t)
+
 ## Desktop Chrome Install
 
 1. Download or clone this repository.
