@@ -18,6 +18,8 @@ Lovable Spark is a lovable extension for users searching for a lovable unlimited
 
 ## Quick Setup
 
+> Important: The extension needs some credits in your Lovable account to work. Lovable gives 5 free credits every day, and those same credits work here too. It will not work with 0 credits.
+
 If you have installed unpacked Chrome extensions before:
 
 1. Download this repository as a ZIP from GitHub.
